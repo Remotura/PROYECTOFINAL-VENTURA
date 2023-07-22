@@ -1,0 +1,3 @@
+Hola, quise subir el repositorio de github pero me salta error de autenticación.
+Voy a seguir intentando.
+También me falta pulir el CSS y el formulario.
