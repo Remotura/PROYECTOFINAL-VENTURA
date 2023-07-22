@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.seccion {
+    height: 500px;
+}
+
+#redesSociales {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+@media (min-width: 768px) {
+    #encabezado {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        background-color: white;
+    }
+
+    #pie {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr 0.5fr;
+        justify-items: center;
+        align-items: center;
+        background-color: grey;
+        color: white;
+    }
+
+    #redes {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    ion-icon {
+        color: white;
+        font-size: 2rem;
+    }
+}
+
+    @media (min-width: 1200px) {
+        section#galeria {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+    }
