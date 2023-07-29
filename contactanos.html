@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+</head>
+
+<body>
+
+    <a href="./index.html">Volver</a>
+    <section id="formularioContacto">
+        <h2 id="contacto" class="destacado">Contactanos</h2>
+
+        <form action="datos.php" method="get">
+            <div>
+                <label class="destacado" for="nombre">Nombre</label>
+                <br>
+                <input type="text" name="nombre" value="" id="nombre" required placeholder="Indique su nombre"
+                    minlength="3" maxlength="10">
+            </div>
+            <div>
+                <label class="destacado" for="apellido">Apellido</label>
+                <br>
+                <input type="text" name="apellido" value="" id="apellido" required placeholder="Indique su apellido">
+            </div>
+            <div>
+                <label class="destacado" for="email">Email</label>
+                <br>
+                <input type="text" name="email" value="" id="email" required placeholder="Indique su Email">
+            </div>
+            <div>
+                <label class="destacado" for="comentario">Comentarios</label>
+                <br>
+                <textarea name="comentario" id="comentario" cols="30" rows="10" required
+                    placeholder="Indique sus comentarios"></textarea>
+            </div>
+            <div>
+                <!--<input type="submit" value="Enviar comentarios">-->
+                <button type="submit">Enviar comentarios</button>
+            </div>
+        </form>
+    </section>
+
+</body>
+
+</html>
