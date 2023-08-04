@@ -1,3 +1,11 @@
-Hola, quise subir el repositorio de github pero me salta error de autenticación.
-Voy a seguir intentando.
-También me falta pulir el CSS y el formulario.
+¡Hola!
+
+De alguna manera pude subir mi proyecto, sólo Dios sabe cómo...
+
+Pero el problema de fondo no está solucionado (no consigo gitpushear nuevos repositorios: saltan errores de autenticación de lo más variopintos).
+
+Mientras tanto... lo que vino lo hizo para quedarse: dejo esto por acá.
+
+Saludos,
+
+V. G.
