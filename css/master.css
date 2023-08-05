@@ -6,64 +6,229 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    font-weight: 100;
     font-size: 12px;
+    background-color: #181823;
+    color: #EFF5F5;
 }
 
-img{
+img {
     width: 100%;
 }
 
-ul{
+html {
+    scroll-behavior: smooth;
+}
+
+
+ul {
     list-style-type: none;
 }
-a{
+
+a {
+    color: #FFFFFF;
     text-decoration: none;
 }
 
-#encabezado{
-    display: grid;
-    grid-template-columns: 1fr 7fr;
-    align-items: center;
-    position: fixed;
-    background-color: #EFF5F5;
-    opacity: 0.95;
-    z-index: 1000;
+h2 {
+    margin-bottom: 20px;
+    font-weight: 300;
 }
 
-ul#opciones {
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    justify-items: right;
+h6 {
+    font-weight: 200;
+    font-style: italic;
+    color: #181823;
 }
 
-#subtituloBanner{
-    position:relative;
-    bottom: 480px;
-    background-color: #1F8A70;
-    opacity: 0.8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 48px;
+p {
+    margin-bottom: 20px;
+    font-weight: 100;
+}
+
+#logo {
+    margin: auto;
+    padding-top: 10px;
+    background-color: #d1d7d7;
+}
+
+#encabezado {
+    text-align: center;
+}
+
+ul#opciones li a {
+    font-size: 1rem;
+    font-weight: 200;
     color: #EFF5F5;
 
 }
 
-#contenido{
+#banner {
     position: relative;
-    bottom: 80px;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 10px;
-    padding: 20px;
-    background-color: #1F8A70;
+    text-align: center;
     color: #EFF5F5;
 }
 
-@media (min-width: 320px){
-    #encabezado{
-        display: grid;
-        
-    }
+#subtituloBanner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.7;
+    font-size: 16px;
+    font-weight: 300;
+    color: black;
+    padding: 15px;
+    background-color: #EFF5F5;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+
 }
 
+#pieDePagina {
+    padding: 30px;
+}
+
+#redesSociales {
+    display: flex;
+    gap: 50px;
+}
+
+ion-icon {
+    color: #EFF5F5;
+    font-size: 5rem;
+}
+
+#volverAlInicio {
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 200;
+    background-color: #696969;
+}
+
+#formulario {
+    display: grid;
+}
+
+#formularioDeContacto {
+    display: inline-block;
+    align-self: center;
+    justify-self: center;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: #b8bfdc;
+    border-radius: 5%;
+}
+
+textarea {
+    resize: none;
+}
+
+#paginaFormulario {
+    background-color: #EFF5F5;
+    color: #181823;
+}
+
+@media (min-width: 768px) {
+
+    body {
+        background-color: #1F8A70;
+    }
+
+    #logo {
+        background-color: #EFF5F5;
+    }
+
+    #encabezado {
+        display: grid;
+        grid-template-columns: 1fr 7fr;
+        align-items: center;
+        position: fixed;
+        background-color: #EFF5F5;
+        opacity: 0.95;
+        z-index: 1000;
+    }
+
+    ul#opciones {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    ul#opciones li a {
+        color: black;
+    }
+
+    ul#opciones li a::after {
+        content: '';
+        width: 0%;
+        background-color: #181823;
+        height: 3px;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        transition: all 0.9s;
+    }
+
+    ul#opciones li a:hover::after {
+        width: 100%;
+    }
+
+    ul#opciones li a:hover {
+        color: #181823;
+    }
+
+    #subtituloBanner {
+        opacity: 0.9;
+        font-size: 38px;
+        color: #EFF5F5;
+        background-color: #1F8A70;
+
+    }
+
+    #contenido {
+        position: relative;
+        top: -12px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 60px;
+        padding: 50px;
+        background-color: #1F8A70;
+        color: #EFF5F5;
+        grid-template-rows: 1fr auto;
+    }
+
+    .secciones {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    #pieDePagina {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        justify-items: center;
+        align-items: center;
+        background-color: #00425A;
+        color: #EFF5F5;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+    #redesSociales {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    ion-icon {
+        font-size: 2rem;
+    }
+
+    #formularioDeContacto {
+        margin-top: 130px;
+        padding: 60px;
+    }
+
+}
