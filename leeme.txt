@@ -1,10 +1,24 @@
 ¡Hola!
 
-De alguna manera pude subir mi proyecto, sólo Dios sabe cómo...
+De alguna manera pude subir mi proyecto, nadie sabe cómo...
 
-Pero el problema de fondo no está solucionado (no consigo gitpushear nuevos repositorios: saltan errores de autenticación de lo más variopintos).
 
-Mientras tanto... lo que vino lo hizo para quedarse: dejo esto por acá.
+Pero el problema de fondo está lejos de estar solucionado! (no consigo gitpushear nuevos repositorios, ya que saltan errores de autenticación de lo más variopintos... como por ejemplo:
+
+
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+/////
+
+) Ya venía teniendo problemas de autenticación con la contraseña y en el apuro me vi generando un token (no sé qué es) pero sigue activo y con este conseguí el primer y único "git push" (desde el cual les escribo, un superviviente... el primero de los de su clase...) Que su reinado sea largo y próspero! Salud
+
+(?)
+
+Gracias por la paciencia
 
 Saludos,
 
