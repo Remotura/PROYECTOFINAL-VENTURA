@@ -155,6 +155,7 @@ textarea {
 
     ul#opciones li a {
         color: black;
+        position: relative;
     }
 
     ul#opciones li a::after {
